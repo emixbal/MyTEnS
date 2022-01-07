@@ -17,9 +17,9 @@ func main() {
 
 	commando.
 		Register(nil).
-		AddArgument("fileName", "File Location", "").                                            // get file name
-		AddFlag("type, t", "Convert log file into plaintext or json ", commando.String, "text"). // get opsi output format
-		AddFlag("output, o", "Set new output location", commando.String, "same").                // get opsi output location
+		AddArgument("fileName", "File Location", "").                                                                                 // get file name
+		AddFlag("type, t", "Convert log file into plaintext or json. [valid: no-type, \"text\", \"json\"]", commando.String, "text"). // get opsi output format
+		AddFlag("output, o", "Set new output location [valid: no-option, <valid directory>]", commando.String, "same").               // get opsi output location
 		SetAction(func(args map[string]commando.ArgValue, flags map[string]commando.FlagValue) {
 
 			var logPath = "/var/log/"
