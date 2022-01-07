@@ -30,7 +30,7 @@ func main() {
 
 			fileLocFinal := fmt.Sprintf("%s", flags["output"].Value)
 
-			// memulai import log file
+			// menjalankan import log file
 			err := jobs.Convert(filePath, fileTypeFinal, fileLocFinal)
 			if err != nil {
 				fmt.Println(err)
