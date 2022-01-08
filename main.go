@@ -12,7 +12,7 @@ func main() {
 		SetExecutableName("MyTensApp").
 		SetVersion("1.0.0").
 		SetDescription(
-			"Tool untuk mengambil log file pada OS Linux di dalam directory /var/log",
+			"Tool untuk mengambil log file pada OS Linux di dalam suatu directory",
 		)
 
 	commando.
@@ -22,9 +22,8 @@ func main() {
 		AddFlag("output, o", "Set new output location [valid: no-option, <valid directory>]", commando.String, "same").               // get opsi output location
 		SetAction(func(args map[string]commando.ArgValue, flags map[string]commando.FlagValue) {
 
-			var logPath = "/var/log/"
 			filePathTxt := args["fileName"].Value
-			filePath := logPath + filePathTxt
+			filePath := filePathTxt
 
 			fileTypeFinal := fmt.Sprintf("%s", flags["type"].Value)
 
