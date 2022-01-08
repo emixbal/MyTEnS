@@ -14,6 +14,11 @@ $ go build
 #### Use the  app
 
  - show help
-	 ````$ ./MyTEnsApp -h````
+	 ````
+	 $ ./MyTEnsApp -h
+	 ````
+	 ![alt text](http://url/to/img.png)
  - copy file log 
-	 ````$ ./MyTEnsApp <file name> -t <opsional, valid: text, json> -o <opsional, valid: valid path>````
+	 ````
+	 $ ./MyTEnsApp <file name> -t <opsional, valid: text, json> -o <opsional, valid: valid path>
+	 ````
