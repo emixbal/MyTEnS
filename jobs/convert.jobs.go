@@ -1,7 +1,7 @@
 package jobs
 
 import (
-	"MyTensApp/helpers"
+	"MyTEnsApp/helpers"
 	"errors"
 	"os"
 	"path"

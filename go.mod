@@ -1,4 +1,4 @@
-module MyTensApp
+module MyTEnsApp
 
 go 1.17
 

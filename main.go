@@ -1,7 +1,7 @@
 package main
 
 import (
-	"MyTensApp/jobs"
+	"MyTEnsApp/jobs"
 	"fmt"
 
 	"github.com/thatisuday/commando"
@@ -9,7 +9,7 @@ import (
 
 func main() {
 	commando.
-		SetExecutableName("MyTensApp").
+		SetExecutableName("MyTEnsApp").
 		SetVersion("1.0.0").
 		SetDescription(
 			"Tool untuk mengambil log file pada OS Linux di dalam suatu directory",
